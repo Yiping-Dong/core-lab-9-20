@@ -38,4 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   addImageElements();
+
+  let poem = document.querySelector('.poem')
+    function addTextElement(){
+      textHolder.forEach((i) => {
+        let addPoem = document.createElement('p');
+        addPoem.src = i;
+        strings = document.createTextNode(i);
+        poem.appendChild(strings);
+      })
+    }
+    addTextElement();
+
+
+  
 });

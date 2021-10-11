@@ -8,8 +8,35 @@
     
 <body>
     <div id="container">
+
+        <h3>Yiping Dong</h3>
+        <ul>
+            <li>
+                Q: What is the purpose of DOMContentLoaded event listener?<br>
+                A: It will ensure that the the html won't load without css and javascript, which can make sure the website will load without function missing.
+            </li> 
+            <li>
+                Q:Explain how this collage is being generated <br>
+                A: The html div only set a canvas for the images to be load on, and the css "img" determined the minimum and maximum size the images can get to, but other than that, the locations of the images are preloaded and placed through javascript.
+            </li>
+            <li>
+                Q:Explain how the img elements are being positioned.<br>
+                A: the css "img" determined the minimum and maximum size the images can get to, but other than that, the locations of the images are randomly generated in the javascript addImageElement function. The function pick preloaded image in a random image and randomly generate and assign the distance from top and left of the screen through times the random number between 0 and 1 by 100 and put it in percentage.
+            </li>
+            <li>
+                Q: What does d represent in line 30? What happens if you change d to a different name? <br>
+                A: I am not exactly sure, but I think it is just assigning a category for each of the images, it should be fine to be replaced by other names.
+            </li>
+            <li>
+                Q: Look into the arrow function syntax ((d) => {}). What do you think of this syntax as compared to the other function syntax  function(d){ }?<br>
+                A: It is a more compact expression of the regular function expression, but can't be used in all scenarios. 
+
+
+
+        </ul>
         
     </div>
+    <div class = "poem"></div>
 </body>
 
 <script src="./scripts/main.js"></script>
